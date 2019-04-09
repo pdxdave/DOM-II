@@ -33,3 +33,39 @@ destination_btn_1.addEventListener('click', function() {
 destination_btn_1.addEventListener('mouseout', function() {
     destination_btn_1.textContent = "Sign Me Up!"
  });
+
+
+
+// # 4 - on click changes the color of the h4 text.  on mouseout text changes back to original
+let destination_btn_2 = document.querySelector('.content-pick .destination:nth-child(2) .btn');
+destination_btn_2.addEventListener('click', function() {
+   let destination_2 = document.querySelector('.content-pick .destination:nth-child(2) h4');
+       destination_2.style.color = "green";
+});
+destination_btn_2.addEventListener('mouseout', function() {
+    let destination_2 = document.querySelector('.content-pick .destination:nth-child(2) h4');
+       destination_2.style.color = "black";
+});
+
+
+// # 5 - on click removes border radius.  on mouseout it returns it.
+let destination_btn_3 = document.querySelector('.content-pick .destination:nth-child(3) .btn');
+
+   destination_btn_3.addEventListener('click', function() {
+      destination_btn_3.style.borderRadius = '0';
+ });
+ destination_btn_3.addEventListener('mouseout', function() {
+    destination_btn_3.style.borderRadius = '15px';
+});
+
+
+// # 6 - mouse over footer and the background changes color
+let footer_padding = document.querySelector('footer');
+footer_padding.addEventListener('mouseover', function(){
+    document.querySelector('footer').style.background = 'orangered';
+    document.querySelector('footer').style.transition = 'background .3s ease-in-out';
+})
+footer_padding.addEventListener('mouseout', function(){
+    document.querySelector('footer').style.background = '#FFEBCD';
+    document.querySelector('footer').style.transition = 'background .3s ease-in-out';
+})
