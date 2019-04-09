@@ -69,3 +69,32 @@ footer_padding.addEventListener('mouseout', function(){
     document.querySelector('footer').style.background = '#FFEBCD';
     document.querySelector('footer').style.transition = 'background .3s ease-in-out';
 })
+
+
+
+// # 7 - mouseover image and hiker dude appears
+let switch_hiker = document.querySelector('.switch_hiker');
+switch_hiker.addEventListener('mouseover', function() {
+    let hike_dude = document.querySelector('.short_hiker');
+        hike_dude.style.display = "block";     
+})
+switch_hiker.addEventListener('mouseout', function() {
+    document.querySelector('.short_hiker').style.display = "none";
+})
+
+
+// # 8 - pop up window reminding user of travel specials
+window.addEventListener('load', function() {
+    alert("Be sure to ask about our travel specials!");
+})
+
+// # 9 - on mouse over the font is scaled up by 20%.
+let logo = document.querySelector('.logo-heading');
+logo.addEventListener('mouseover', function() {
+    logo.style.transform = "scale(1.2)";
+    logo.style.transition = "all .3s ease-in-out";
+})
+logo.addEventListener('mouseout', function() {
+    logo.style.transform = "scale(1)";
+    logo.style.transition = "all .3s ease-in-out";
+})
