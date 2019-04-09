@@ -1,5 +1,7 @@
 // Your code goes here
 
+TweenMax.to('.car', 5, {x: 600});
+
 // # 1 - mouse over to change the image.  goes back when mouse out.
 let switch_pic = document.querySelector('.switch_pic');
 
@@ -69,7 +71,6 @@ footer_padding.addEventListener('mouseout', function(){
     document.querySelector('footer').style.background = '#FFEBCD';
     document.querySelector('footer').style.transition = 'background .3s ease-in-out';
 })
-
 
 
 // # 7 - mouseover image and hiker dude appears
