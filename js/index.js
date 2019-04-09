@@ -98,3 +98,14 @@ logo.addEventListener('mouseout', function() {
     logo.style.transform = "scale(1)";
     logo.style.transition = "all .3s ease-in-out";
 })
+
+
+// # 10 - mouse over image and font size increases
+
+let pick_destination = document.querySelector('.pick-destination');
+pick_destination.addEventListener('mouseover', function() {
+    document.querySelector('.content-destination p').style.fontSize = '2rem';
+})
+pick_destination.addEventListener('mouseout', function() {
+    document.querySelector('.content-destination p').style.fontSize = '1.6rem';
+})
