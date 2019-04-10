@@ -226,6 +226,9 @@ img {
   font-size: 1.6rem;
   padding: 20px;
 }
+.home .short_hiker {
+  display: none;
+}
 .home .intro {
   padding: 90px 0 10px;
   border-bottom: 2px dashed #C0C0C0;
@@ -340,6 +343,7 @@ img {
   border: 1px solid #C0C0C0;
   cursor: pointer;
   font-size: 1.8rem;
+  transition: all 0.3s ease-in-out;
 }
 @media (max-width: 500px) {
   .home .content-pick .destination .btn {
